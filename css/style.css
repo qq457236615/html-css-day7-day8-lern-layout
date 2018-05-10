@@ -1,0 +1,145 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font: 10px/1.5 Helvetica, Helvetica, Courier, "Courier New", Georgia, Times, "Times New Roman", Verdana;
+}
+ul {
+    list-style: none;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* header */
+header {
+    height: 100px;
+    background-color: #130707;
+}
+header > div {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+header > div > .logo {
+    float: left;
+
+    font-size: 30px;
+    line-height: 100px;
+    color: #fff;
+}
+header > div > nav {
+    float: right;
+    margin-right: -10px;
+}
+header nav > a {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+/* main > banner */
+.banner {
+    position: relative;
+    height: 250px;
+}
+.banner > .carousel {
+    height: 100%;
+    background-color: #adff2f;
+}
+.trig {
+    position: absolute;
+    right: 100px;
+    bottom: 25px;
+
+    margin-right: -10px;
+
+    font-size: 0;
+}
+.trig > li {
+    display: inline-block;
+    vertical-align: bottom;
+
+    width: 20px;
+    height: 35px;
+    border: 1px solid #030202;
+    margin-right: 10px;
+
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+
+    background-color: #cfcbcb91;
+    color: #030202;
+}
+.trig > .on {
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+}
+/* main-nav + main-content */
+.main > .nav-warp {
+    position: relative;
+
+    height: 100px;
+    border-bottom: 1px solid #808080;
+}
+.main-nav {
+    position: absolute;
+    left: calc((100% - 960px)/2);
+    bottom: -1px;
+
+    width: 960px;
+}
+.main-nav > a {
+    float: left;
+
+    width: 100px;
+    border: 1px solid #808080;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+
+    color: #030202;
+    background-color: #d4d1d177;
+}
+.main-nav > .on {
+    border-bottom-color: #fff;
+    background-color: #fff;
+}
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: wrap;
+
+    width: 960px;
+    margin: 0 auto 20px;
+
+    font-size: 16px;
+}
+.main-content > li {
+    padding: 80px;
+    margin: 12px 12px 0 0;
+    border: 1px solid #808080;
+}
+/* footer */
+footer {
+    height: 100px;
+    text-align: center;
+    background-color: #030202;
+}
+footer > p {
+    padding-top: 13px;
+    font-size: 14px;
+    color: #fff;
+}
